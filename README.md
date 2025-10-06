@@ -1,6 +1,9 @@
 # Monitoreo Colaborativo de Revistas Accesibles / Collaborative Monitoring of Accessible Journals
 
 Esta página web muestra un listado de revistas académicas, indicando si son de acceso abierto, híbridas o si ofrecen opciones de publicación gratuita en acceso cerrado.  
+
+/
+
 This webpage displays a list of academic journals, showing whether they are open access, hybrid, or offer free closed-access publication options.
 
 ## Contenido / Contents

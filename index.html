@@ -1,0 +1,4629 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitoreo Colaborativo de Revistas Accesibles</title>
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+</head>
+<body>
+  <h1>Monitoreo Colaborativo de Revistas Accesibles</h1>
+  <p>Esta tabla muestra revistas que son de acceso abierto, híbridas o que tienen opciones de acceso cerrado gratuitas. Para contribuir con nuevas revistas, por favor completa el <a href="https://docs.google.com/forms/d/e/1FAIpQLSexiJsU7BGfH8eN0xAHkp3X9M44Uj7J_tsFDkXMqOPiVGFvjQ/viewform?usp=sharing" target="_blank">formulario de colaboración</a>.</p>
+
+  <table id="journalTable">
+    <thead>
+<tr>
+  <th>Journal</th>
+  <th>Impact Factor</th>
+  <th>Hybrid?</th>
+  <th>Free Closed‑Access Option</th>
+  <th>Link</th>
+</tr>
+</thead>
+    <tbody><tr>
+  <td>Bioinformatics</td>
+  <td>~6.9</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Briefings in Bioinformatics</td>
+  <td>~6.8</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Journal of Biomedical Informatics</td>
+  <td>~6.3</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>IEEE/ACM Trans. on Computational Biology and Bioinformatics (TCBB)</td>
+  <td>Q1 level</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Memetic Computing</td>
+  <td><3</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>IEEE Journal of Biomedical and Health Informatics (JBHI)</td>
+  <td>~7.7</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Journal of the American Medical Informatics Association (JAMIA)</td>
+  <td>~6.4</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Implementation Science</td>
+  <td>~9.7</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GigaScience</td>
+  <td>~9.2</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Computer Methods and Programs in Biomedicine</td>
+  <td>1.5–2</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Acta Crystallographica Section D: Structural Biology</td>
+  <td>~7.65</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Wiley Interdisciplinary Reviews: Comp. Molecular Science</td>
+  <td>~11.4</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Computers in Biology and Medicine</td>
+  <td>6.3</td>
+  <td>No</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nucleic Acids Research (NAR)</td>
+  <td>14.9</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Journal of Computational Biology</td>
+  <td>4.4</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Proteins: Structure, Function, and Bioinformatics</td>
+  <td>4.3</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Journal of Molecular Biology</td>
+  <td>5.5</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Journal of Chemical Information and Modeling</td>
+  <td>5.6</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Journal of Medicinal Chemistry</td>
+  <td>7.3</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Journal of General Physiology</td>
+  <td>4.0</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Database: The Journal of Biological Databases and Curation</td>
+  <td>4.2</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>NAR Genomics and Bioinformatics</td>
+  <td>5.1</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Genomics, Proteomics & Bioinformatics</td>
+  <td>6.4</td>
+  <td>No</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Science China Life Sciences</td>
+  <td>4.6</td>
+  <td>No</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Journal of Molecular Cell Biology</td>
+  <td>5.5</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Acta Pharmacologica Sinica</td>
+  <td>5.1</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>BioScience Trends</td>
+  <td>3.5</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Journal of Biomedical Science</td>
+  <td>5.8</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Cell Research</td>
+  <td>25.6</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Protein & Cell</td>
+  <td>10.2</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>National Science Review</td>
+  <td>17.3</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Molecular & Cellular Proteomics</td>
+  <td>6.1</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Journal of Molecular Graphics & Modelling</td>
+  <td>2.7</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>International J. Biol. Macromolecules</td>
+  <td>5</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Journal of Molecular Biology</td>
+  <td>4.5</td>
+  <td>Sí</td>
+  <td>Sí</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Journal of Chemical Information and Modeling</td>
+  <td>5,3</td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>In Silico Pharmacology</td>
+  <td>Dudoso</td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Medicina Intensiva</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Medicina Intensiva (English Edition)</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Mental Health & Prevention</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Mental Health and Physical Activity</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Metabolic Engineering</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Metabolism</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Methods</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Micro and Nanostructures</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Microbes and Infection</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Microbial Pathogenesis</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Microbial Risk Analysis</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Microbiological Research</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Microchemical Journal</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Microelectronic Engineering</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Microelectronics Journal</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Microelectronics Reliability</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Micron</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Microporous and Mesoporous Materials</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Microprocessors and Microsystems</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Microvascular Research</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Midwifery</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Minerals Engineering</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Mitochondrion</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Modern Pathology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Molecular and Biochemical Parasitology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Molecular and Cellular Endocrinology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Molecular and Cellular Neuroscience</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Molecular Aspects of Medicine</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Molecular Catalysis</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Molecular Cell</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Molecular Genetics and Metabolism</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Molecular Immunology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Molecular Phylogenetics and Evolution</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Molecular Plant</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Molecular Therapy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Morphologie</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Motricité Cérébrale</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Multiple Sclerosis and Related Disorders</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Mutation Research - Fundamental and Molecular Mechanisms of Mutagenesis</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Mutation Research - Genetic Toxicology and Environmental Mutagenesis</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Mutation Research - Reviews in Mutation Research</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Médecine & Droit</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Médecine de Catastrophe - Urgences Collectives</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Médecine des Maladies Métaboliques</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Médecine du Sommeil</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Médecine Nucléaire</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Médecine Palliative</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nano Communication Networks</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nano Energy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nano Today</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nano-Structures & Nano-Objects</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>NanoImpact</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nanomedicine: Nanotechnology, Biology and Medicine</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>NDT & E International</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Neural Networks</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Neurobiology of Aging</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Neurobiology of Learning and Memory</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Neurochemistry International</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Neurochirurgie</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Neurocirugía</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Neurocirugía (English Edition)</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Neurocomputing</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Neuromodulation: Technology at the Neural Interface</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Neuromuscular Disorders</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Neuron</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Neuropeptides</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Neuropharmacology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Neurophysiologie clinique</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Neuropsychiatrie de l'Enfance et de l'Adolescence</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Neuropsychologia</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Neuroscience</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Neuroscience & Biobehavioral Reviews</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Neuroscience Letters</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Neuroscience Research</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>NeuroToxicology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Neurotoxicology and Teratology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>New Astronomy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>New Astronomy Reviews</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>New Ideas in Psychology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nitric Oxide</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nonlinear Analysis</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nonlinear Analysis: Hybrid Systems</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nonlinear Analysis: Real World Applications</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>NPG Neurologie - Psychiatrie - Gériatrie</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nuclear and Particle Physics Proceedings</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nuclear Data Sheets</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nuclear Engineering and Design</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nuclear Medicine and Biology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nuclear Physics A</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nurse Education in Practice</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nurse Education Today</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nurse Leader</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nursing for Women's Health</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nursing Outlook</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nutrition</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nutrition Clinique et Métabolisme</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nutrition Research</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nutrition, Metabolism & Cardiovascular Diseases</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Obesity Medicine</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Obesity Research & Clinical Practice</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Ocean & Coastal Management</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Ocean Engineering</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Ocean Modelling</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Omega</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>One Earth</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Online Social Networks and Media</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Operations Research for Health Care</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Operations Research Letters</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Operative Techniques in Orthopaedics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Operative Techniques in Otolaryngology - Head and Neck Surgery</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Operative Techniques in Sports Medicine</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Operative Techniques in Thoracic and Cardiovascular Surgery</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Ophthalmology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Ophthalmology Glaucoma</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Ophthalmology Retina</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Optical Fiber Technology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Optical Materials</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Optical Switching and Networking</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Optics & Laser Technology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Optics and Lasers in Engineering</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Optics Communications</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Optik</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Oral Oncology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Oral Surgery, Oral Medicine, Oral Pathology and Oral Radiology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Orbis</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Ore and Energy Resource Geology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Organic Electronics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Organic Geochemistry</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Organizational Behavior and Human Decision Processes</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Organizational Dynamics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Orthopaedics & Traumatology: Surgery & Research</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Osteoarthritis and Cartilage</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Osteopathische Medizin</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Pacific-Basin Finance Journal</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Paediatric Respiratory Reviews</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Pain Management Nursing</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Palaeogeography, Palaeoclimatology, Palaeoecology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Palaeoworld</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Pancreatology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Parallel Computing</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Parasitology International</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Parkinsonism & Related Disorders</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Particuology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Pathology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Pathology - Research and Practice</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Patient Education and Counseling</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Pattern Recognition</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Pattern Recognition Letters</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Pediatric Dental Journal</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Pediatric Neurology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Pedobiologia</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Peptides</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Perfectionnement en Pédiatrie</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Performance Enhancement & Health</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Performance Evaluation</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Perioperative Care and Operating Room Management</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Personality and Individual Differences</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Personalized Medicine in Psychiatry</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Perspectives in Plant Ecology, Evolution and Systematics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Pervasive and Mobile Computing</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Pesticide Biochemistry and Physiology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Pharmacological Research - Natural Products</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Pharmacological Research - Reports</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Pharmacology & Therapeutics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Pharmacology Biochemistry and Behavior</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>PharmaNutrition</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Photodiagnosis and Photodynamic Therapy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Photonics and Nanostructures - Fundamentals and Applications</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Physica A: Statistical Mechanics and its Applications</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Physica B: Condensed Matter</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Physica C: Superconductivity and its Applications</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Physica D: Nonlinear Phenomena</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Physica E: Low-dimensional Systems and Nanostructures</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Physica Medica</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Physical Communication</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Physical Therapy in Sport</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Physics and Chemistry of the Earth, Parts A/B/C</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Physics Letters A</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Physics of Life Reviews</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Physics of the Dark Universe</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Physics of the Earth and Planetary Interiors</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Physics Reports</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Physiological and Molecular Plant Pathology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Physiology & Behavior</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Physiotherapy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Phytochemistry</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Phytochemistry Letters</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Phytomedicine</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Piel</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Placenta</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Planetary and Space Science</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Plant Gene</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Plant Physiology and Biochemistry</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Plant Science</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Plasmid</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Poetics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Polar Science</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Political Geography</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Polyhedron</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Polymer</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Polymer Degradation and Stability</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Postharvest Biology and Technology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Powder Technology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Practical Radiation Oncology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Pratique neurologique - FMC</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Pratiques Psychologiques</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Precambrian Research</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Precision Engineering</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Pregnancy Hypertension</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Preventive Medicine</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Preventive Veterinary Medicine</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Primary Care Diabetes</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Probabilistic Engineering Mechanics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Proceedings of the Combustion Institute</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Proceedings of the Geologists' Association</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Process Biochemistry</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Process Safety and Environmental Protection</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Progress in Aerospace Sciences</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Progress in Biophysics & Molecular Biology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Progress in Cardiovascular Diseases</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Progress in Economic Geography</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Progress in Energy and Combustion Science</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Progress in Lipid Research</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Progress in Materials Science</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Progress in Natural Science: Materials International</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Progress in Neuro-Psychopharmacology & Biological Psychiatry</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Progress in Neurobiology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Progress in Nuclear Energy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Progress in Nuclear Magnetic Resonance Spectroscopy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Progress in Oceanography</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Progress in Organic Coatings</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Progress in Particle and Nuclear Physics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Progress in Pediatric Cardiology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Progress in Planning</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Progress in Polymer Science</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Progress in Quantum Electronics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Progress in Retinal and Eye Research</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Progress in Surface Science</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Progrès en Urologie</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Prostaglandins & Other Lipid Mediators</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Prostaglandins, Leukotrienes & Essential Fatty Acids</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Protein Expression and Purification</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Protist</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Psiquiatría Biológica</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Psychiatry Research</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Psychiatry Research: Neuroimaging</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Psychologie du Travail et des Organisations</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Psychology of Sport and Exercise</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Psychoneuroendocrinology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Public Health</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Public Relations Review</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Pulmonary Pharmacology and Therapeutics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Quaternary Geochronology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Quaternary International</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Quaternary Science Reviews</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Radiation Measurements</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Radiation Physics and Chemistry</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Radiography</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Radiología</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Radiología (English Edition)</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Radiotherapy & Oncology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Rangeland Ecology & Management</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Rangelands</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Reactive and Functional Polymers</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>REC: CardioClinics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Regional Science and Urban Economics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Regional Studies in Marine Science</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Regulatory Toxicology and Pharmacology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Rehabilitación</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Reliability Engineering & System Safety</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Remote Sensing Applications: Society and Environment</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Remote Sensing of Environment</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Renewable & Sustainable Energy Reviews</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Renewable Energy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Renewable Energy Focus</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Reproductive Biology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Reproductive BioMedicine Online</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Reproductive Toxicology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Research in Autism Spectrum Disorders</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Research in Developmental Disabilities</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Research in Economics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Research in International Business and Finance</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Research in Microbiology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Research in Organizational Behavior</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Research in Social and Administrative Pharmacy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Research in Social Stratification and Mobility</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Research in Transportation Business & Management</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Research in Transportation Economics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Research in Veterinary Science</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Research Methods in Applied Linguistics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Research Policy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Resource and Energy Economics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Resources Policy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Resources, Conservation & Recycling</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Respiratory Investigation</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Respiratory Medicine</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Respiratory Medicine and Research</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Respiratory Physiology & Neurobiology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Resuscitation</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Reumatología Clínica</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Reumatología clínica (English edition)</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Review of Economic Dynamics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Review of Palaeobotany and Palynology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revista Clínica Española</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revista Clínica Española (English Edition)</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revista Colombiana de Reumatología</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revista Colombiana de Reumatología (English Edition)</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revista de Logopedia, Foniatría y Audiología</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revista de Psicodidáctica</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revista de Psicodidáctica (English edition)</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Spanish Journal of Psychiatry and Mental Health</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revista de Senología y Patología Mamaria</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revista Española de Anestesiología y Reanimación</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revista Española de Anestesiología y Reanimación (English Edition)</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revista Española de Cardiología</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revista Española de Cardiología (English edition)</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revista Española de Medicina Legal</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revista Española de Medicina Nuclear e Imagen Molecular</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revista Española de Medicina Nuclear e Imagen Molecular (English Edition)</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revista Española de Patología</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revista Iberoamericana de Micología</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revista Internacional de Acupuntura</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revista Internacional de Andrología</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revue d'Epidémiologie et de Santé Publique</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revue de Chirurgie Orthopédique et Traumatologique</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revue de Micropaléontologie</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revue du Rhumatisme</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revue Française d'Allergologie</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Revue Neurologique</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Rhizosphere</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Robotics and Autonomous Systems</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Robotics and Computer-Integrated Manufacturing</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Russian Literature</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Safety Science</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Sages-Femmes</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Santé mentale et Droit</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Scandinavian Journal of Management</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Schizophrenia Research</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Science & Justice</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Science & Sports</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Science Bulletin</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Science of Computer Programming</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Science of the Total Environment</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Scientia Horticulturae</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Scripta Materialia</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Sedimentary Geology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seizure - European Journal of Epilepsy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Arthritis and Rheumatism</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Arthroplasty: JSES</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Cancer Biology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Cell and Developmental Biology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Colon and Rectal Surgery</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Diagnostic Pathology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Fetal & Neonatal Medicine</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Hematology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Immunology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Nephrology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Nuclear Medicine</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Oncology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Oncology Nursing</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Orthodontics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Pediatric Neurology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Pediatric Surgery</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Perinatology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Radiation Oncology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Roentgenology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Spine Surgery</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Thoracic and Cardiovascular Surgery</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Thoracic and Cardiovascular Surgery: Pediatric Cardiac Surgery Annual</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Ultrasound, CT and MRI</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Seminars in Vascular Surgery</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Sensors and Actuators A: Physical</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Sensors and Actuators B: Chemical</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Separation and Purification Technology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Sexual & Reproductive HealthCare</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Signal Processing</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Signal Processing: Image Communication</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Simulation Modelling Practice and Theory</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Sleep Health</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Sleep Medicine</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Sleep Medicine Reviews</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Small Ruminant Research</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Smart Health</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Social Networks</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Social Science & Medicine</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Social Science Research</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Socio-Economic Planning Sciences</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Soil & Tillage Research</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Soil Biology and Biochemistry</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Soil Dynamics and Earthquake Engineering</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Solar Energy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Solar Energy Materials & Solar Cells</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Solid State Communications</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Solid State Ionics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Solid State Nuclear Magnetic Resonance</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Solid State Sciences</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Solid-State Electronics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>South African Journal of Botany</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Space Policy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Spanish Journal of Legal Medicine</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Spatial and Spatio-temporal Epidemiology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Spatial Statistics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Spectrochimica Acta Part B: Atomic Spectroscopy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Speech Communication</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Sports Economics Review</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Sports Orthopaedics and Traumatology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Statistics & Probability Letters</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Steroids</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Stochastic Processes and their Applications</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Structural Change and Economic Dynamics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Structural Safety</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Structure</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Structures</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Studies in Educational Evaluation</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Studies in History and Philosophy of Science</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Surface and Coatings Technology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Surface Science</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Surface Science Reports</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Surfaces and Interfaces</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Surgery</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Surgery for Obesity and Related Diseases</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Surgical Oncology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Survey of Ophthalmology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Sustainable Chemistry and Pharmacy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Sustainable Cities and Society</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Sustainable Computing: Informatics and Systems</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Sustainable Energy Technologies and Assessments</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Sustainable Energy, Grids and Networks</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Sustainable Materials and Technologies</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Sustainable Production and Consumption</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Swarm and Evolutionary Computation</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Synthetic Metals</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>System</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Systematic and Applied Microbiology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Systems & Control Letters</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Talanta</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Teaching and Learning in Nursing</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Teaching and Teacher Education</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Techniques and Innovations in Gastrointestinal Endoscopy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Techniques in Vascular and Interventional Radiology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Technological Forecasting and Social Change</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Technology in Society</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Technovation</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Tectonophysics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Telecommunications Policy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Telematics and Informatics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Tetrahedron</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Tetrahedron Letters</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The American Journal of Cardiology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The American Journal of Clinical Nutrition</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The American Journal of Geriatric Psychiatry</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The American Journal of Human Genetics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The American Journal of Medicine</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The American Journal of Pathology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The American Journal of Surgery</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The American Journal of the Medical Sciences</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Annals of Thoracic Surgery</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Arts in Psychotherapy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The British Accounting Review</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Electricity Journal</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The European Journal of Psychiatry</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Extractive Industries and Society</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Foot</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The International Journal of Biochemistry & Cell Biology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The International Journal of Management Education</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Internet and Higher Education</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Joint Commission Journal on Quality and Patient Safety</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Journal for Nurse Practitioners</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Journal of Academic Librarianship</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Journal of Allergy and Clinical Immunology: In Practice</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Journal of Chemical Thermodynamics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Journal of Economic Asymmetries</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Journal of Emergency Medicine</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Journal of Foot & Ankle Surgery</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Journal of Hand Surgery</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Journal of Heart and Lung Transplantation</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Journal of High Technology Management Research</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Journal of Mathematical Behavior</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Journal of Molecular Diagnostics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Journal of Nutrition</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Journal of Nutritional Biochemistry</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Journal of Pain</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Journal of Pediatrics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Journal of Steroid Biochemistry and Molecular Biology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Journal of Strategic Information Systems</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Journal of Supercritical Fluids</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Journal of the American Dental Association</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Journal of the Economics of Ageing</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Knee</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Lancet</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Lancet Child & Adolescent Health</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Lancet Diabetes & Endocrinology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Lancet Gastroenterology & Hepatology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Lancet Haematology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Lancet HIV</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Lancet Infectious Diseases</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Lancet Neurology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Lancet Oncology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Lancet Psychiatry</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Lancet Respiratory Medicine</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Lancet Rheumatology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Leadership Quarterly</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The North American Journal of Economics and Finance</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Ocular Surface</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Quarterly Review of Economics and Finance</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Spine Journal</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Surgeon</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The Veterinary Journal</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Theoretical and Applied Fracture Mechanics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Theoretical Computer Science</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Theoretical Population Biology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Therapies</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Theriogenology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Thermal Science and Engineering Progress</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Thermochimica Acta</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Thin Solid Films</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Thin-Walled Structures</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Thinking Skills and Creativity</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Thrombosis Research</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Tissue and Cell</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Topics in Companion Animal Medicine</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Topology and its Applications</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Tourism Management</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Tourism Management Perspectives</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Toxicologie Analytique et Clinique</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Toxicology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Toxicology and Applied Pharmacology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Toxicology in Vitro</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Toxicology Letters</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Toxicon</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Transfusion and Apheresis Science</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Transfusion Clinique et Biologique</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Transfusion Medicine Reviews</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Translational Research</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Transplant Immunology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Transplantation and Cellular Therapy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Transplantation Proceedings</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Transplantation Reviews</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Transport Policy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Transportation Geotechnics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Transportation Research Part A: Policy and Practice</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Transportation Research Part B: Methodological</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Transportation Research Part C: Emerging Technologies</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Transportation Research Part D: Transport and Environment</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Transportation Research Part E: Logistics and Transportation Review</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Transportation Research Part F: Traffic Psychology and Behaviour</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Travel Behaviour and Society</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Trends in Anaesthesia and Critical Care</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Trends in Analytical Chemistry</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Trends in Biochemical Sciences</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Trends in Biotechnology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Trends in Cancer</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Trends in Cardiovascular Medicine</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Trends in Cell Biology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Trends in Chemistry</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Trends in Cognitive Sciences</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Trends in Ecology & Evolution</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Trends in Endocrinology and Metabolism</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Trends in Environmental Analytical Chemistry</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Trends in Food Science & Technology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Trends in Genetics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Trends in Immunology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Trends in Microbiology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Trends in Molecular Medicine</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Trends in Neuroscience and Education</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Trends in Neurosciences</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Trends in Parasitology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Trends in Pharmacological Sciences</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Trends in Plant Science</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Tribology International</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Tuberculosis</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Tunnelling and Underground Space Technology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Ultramicroscopy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Ultrasonics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Ultrasound in Medicine & Biology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Upstream Oil and Gas Technology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Urban Climate</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Urban Forestry & Urban Greening</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Urologic Oncology: Seminars and Original Investigations</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Urology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Utilities Policy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Vaccine</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Vacunas</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Vacunas (English Edition)</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Vacuum</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Value in Health</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Value in Health Regional Issues</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Vascular Pharmacology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Vehicular Communications</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Veterinary Anaesthesia and Analgesia</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Veterinary Immunology and Immunopathology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Veterinary Microbiology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Veterinary Parasitology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Veterinary Parasitology: Regional Studies and Reports</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Vibrational Spectroscopy</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Virology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Vision Research</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Visual Journal of Emergency Medicine</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Waste Management</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Water Research</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Water Resources and Economics</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Water Security</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Wave Motion</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Wear</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Wilderness & Environmental Medicine</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Women and Birth</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Women's Health Issues</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Women's Studies International Forum</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>World Development</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>World Development Perspectives</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>World Journal of Acupuncture - Moxibustion</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>World Neurosurgery</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>World Patent Information</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Zeitschrift für Evidenz, Fortbildung und Qualität im Gesundheitswesen</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Zoologischer Anzeiger</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Zoology</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Éthique & Santé</td>
+  <td></td>
+  <td>Sí</td>
+  <td>No</td>
+  <td></td>
+</tr>
+</tbody>
+  </table>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+</html>
